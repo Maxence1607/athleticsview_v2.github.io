@@ -42,8 +42,8 @@
                     <div class="bg-bluelight text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <img alt="aaa" src="{{ .card3.img }}" />
-                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <img alt="aaa" src="{{ .card1.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card1.text }}</p>
                                 <hr class="d-none d-lg-block mb-0 me-0" />
                             </div>
                         </div>
@@ -53,8 +53,8 @@
                     <div class="bg-bluelight text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <img alt="aaa" src="{{ .card3.img }}" />
-                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <img alt="aaa" src="{{ .card2.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card2.text }}</p>
                                 <hr class="d-none d-lg-block mb-0 me-0" />
                             </div>
                         </div>
@@ -77,8 +77,8 @@
                     <div class="bg-bluelight text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <img alt="aaa" src="{{ .card3.img }}" />
-                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <img alt="aaa" src="{{ .card4.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card4.text }}</p>
                                 <hr class="d-none d-lg-block mb-0 me-0" />
                             </div>
                         </div>
@@ -88,8 +88,8 @@
                     <div class="bg-bluelight text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <img alt="aaa" src="{{ .card3.img }}" />
-                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <img alt="aaa" src="{{ .card5.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card5.text }}</p>
                                 <hr class="d-none d-lg-block mb-0 me-0" />
                             </div>
                         </div>
@@ -99,8 +99,8 @@
                     <div class="bg-bluelight text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <img alt="aaa" src="{{ .card3.img }}" />
-                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <img alt="aaa" src="{{ .card6.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card6.text }}</p>
                                 <hr class="d-none d-lg-block mb-0 me-0" />
                             </div>
                         </div>
@@ -110,12 +110,13 @@
 
             <!-- Featured Project Row-->
             <div class="row gx-0 mb-4 mt-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .card1.img }}" alt="..." />
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .bigcard1.img }}"
+                        alt="..." />
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
-                        <h4>{{ .card1.title }}</h4>
-                        <p class="text-black-50 mb-0">{{ .card1.text }}</p>
+                        <h4>{{ .bigcard1.title }}</h4>
+                        <p class="text-black-50 mb-0">{{ .bigcard1.text }}</p>
                     </div>
                 </div>
             </div>
@@ -124,11 +125,12 @@
             <div class="row gx-0 mb-4 mt-4 mb-lg-5 align-items-center">
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text-right text-center text-lg-left">
-                        <h4>{{ .card1.title }}</h4>
-                        <p class="text-black-50 mb-0">{{ .card1.text }}</p>
+                        <h4>{{ .bigcard2.title }}</h4>
+                        <p class="text-black-50 mb-0">{{ .bigcard2.text }}</p>
                     </div>
                 </div>
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .card1.img }}" alt="..." />
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .bigcard2.img }}"
+                        alt="..." />
                 </div>
             </div>
 
@@ -136,17 +138,19 @@
     </section>
     {{ end }}
     <!-- Signup-->
+    {{ with site.Data.homepage.contact }}
     <section class="signup-section bg-black" id="signup">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-10 col-lg-8 mx-auto text-center">
                     <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 class="text-white mb-5">Please feel free to contact us for more questions</h2>
+                    <h2 class="text-white mb-5">{{ .contact.text }}</h2>
                     <a class="btn btn-primary" href="mailto:contact@athleticsview.com">Contact Us!</a>
                 </div>
             </div>
         </div>
     </section>
+    {{ end }}
     {{- partial "footer.html" . -}}
 </body>
 
