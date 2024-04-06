@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+{{- partial "head.html" . -}}
+
+<body id="page-top">
+    {{- partial "header.html" . -}}
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    {{ with site.Data.homepage.main }}
+                    <h1 class="mx-auto my-0 text-uppercase">{{ .header.title }}</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">{{ .header.description }}</h2>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    {{ with site.Data.homepage.about }}
+    <section class="about-section text-center" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">{{ .title }}</h2>
+                    <p class="text-white-50">{{ .desc }}</p>
+                </div>
+            </div>
+            <img class="img-fluid" src="{{ .image }}" alt="..." />
+        </div>
+    </section>
+    {{ end }}
+    <!-- Projects-->
+    {{ with site.Data.homepage.projects }}
+    <section class="projects-section bg-bluelight" id="projects">
+        <div class="container px-4 px-lg-5">
+
+            <!-- Project One Row-->
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-4 order-lg-first">
+                    <div class="bg-bluelight text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <img alt="aaa" src="{{ .card3.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-lg-first">
+                    <div class="bg-bluelight text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <img alt="aaa" src="{{ .card3.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-lg-first">
+                    <div class="bg-bluelight text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <img alt="aaa" src="{{ .card3.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-4 order-lg-first">
+                    <div class="bg-bluelight text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <img alt="aaa" src="{{ .card3.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-lg-first">
+                    <div class="bg-bluelight text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <img alt="aaa" src="{{ .card3.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-lg-first">
+                    <div class="bg-bluelight text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <img alt="aaa" src="{{ .card3.img }}" />
+                                <p class="mb-0 text-black-50">{{ .card3.text }}</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Project Row-->
+            <div class="row gx-0 mb-4 mt-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .card1.img }}" alt="..." />
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>{{ .card1.title }}</h4>
+                        <p class="text-black-50 mb-0">{{ .card1.text }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Project Row-->
+            <div class="row gx-0 mb-4 mt-4 mb-lg-5 align-items-center">
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text-right text-center text-lg-left">
+                        <h4>{{ .card1.title }}</h4>
+                        <p class="text-black-50 mb-0">{{ .card1.text }}</p>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .card1.img }}" alt="..." />
+                </div>
+            </div>
+
+        </div>
+    </section>
+    {{ end }}
+    <!-- Signup-->
+    <section class="signup-section bg-black" id="signup">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Please feel free to contact us for more questions</h2>
+                    <a class="btn btn-primary" href="mailto:contact@athleticsview.com">Contact Us!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>

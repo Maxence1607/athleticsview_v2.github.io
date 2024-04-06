@@ -1,0 +1,25 @@
+# Main Title
+main:
+  header:
+    title : "Athletics View" # Title Text
+    description : "Description si on veut sinon no " # Title Desc
+
+# About
+about:
+  title: "Génération automatique de résumés vidéos"
+  desc: " Nous accompagnons les diffuseurs dans la création de leurs contenus à destination des réseaux sociaux et des plateformes de partage. Avec AthleticsView vous n'êtes plus limités dans la génération de vos résumés de matchs. Plus besoin de choisir entre deux rencontres par manque de ressources humaines. Plus besoin non plus de faire les résumés des matchs de la nuit à la première heure le lendemain, notre algorithme s'occupe de tout. Notre mission est de vous permettre de médiatiser au mieux les sports que vous diffusez."
+  image: "assets/img/ipad.png"
+
+projects:
+  card1:
+    title: "Graysx"
+    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+    img: "assets/img/bg-masthead.jpg"
+  card2:
+    title: "Graysx"
+    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+    img: "assets/img/demo-image-01.jpg"
+  card3:
+    title: "Graysx"
+    text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+    img: "assets/img/bk.webp"
