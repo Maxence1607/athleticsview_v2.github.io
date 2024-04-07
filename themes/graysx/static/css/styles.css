@@ -655,6 +655,10 @@ progress {
   content: "— ";
 }
 
+.img-radius {
+  border-radius: 0.5rem;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -9040,6 +9044,11 @@ fieldset:disabled .btn {
   background-color: #f5f7fe !important;
 }
 
+.bg-greenlight {
+  --bs-bg-opacity: 1;
+  background-color: #f3f5f4 !important;
+}
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
@@ -9048,6 +9057,11 @@ fieldset:disabled .btn {
 .bg-black {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-greenblack {
+  --bs-bg-opacity: 1;
+  background-color: #95B1AE !important;
 }
 
 .bg-white {
@@ -12503,7 +12517,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #000;
+  background-color: #95B1AE;
 }
 
 #mainNav .navbar-toggler {
@@ -12564,7 +12578,7 @@ body {
   }
 
   #mainNav.navbar-shrink {
-    background-color: #000;
+    background-color: #95B1AE;
   }
 
   #mainNav.navbar-shrink .navbar-brand {
@@ -12608,7 +12622,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/head.gif");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%, #000 100%), url("../assets/img/head.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12664,7 +12678,8 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  /* background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%); */
+  background: linear-gradient(to bottom, #95B1AE 0%, rgba(149, 177, 174, 0.5) 75%, rgba(243, 245, 244, 1) 100%);
 }
 
 .about-section p {
@@ -12712,7 +12727,6 @@ body {
 
 .signup-section {
   padding: 6rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
